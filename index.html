@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <!-- 
+  <video id="bg-video" autoplay muted loop>
+    <source src="./video/video.mp4" type="video/mp4">Your browser does not support the video tag.
+  </video> -->
+
+    <section class="content">
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <div class="left">Alok's Portfolio</div>
+
+                <div class="right">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                    <select name="Menu" id="menu" onchange="location=this.value">
+                        <option value="" disabled selected>Select Section</option>
+                        <option value="#home">Home</option>
+                        <option value="#about">About</option>
+                        <option value="#projects">Projects</option>
+                        <option value="#skills">Skills</option>
+                        <option value="#contact">Contact</option>
+                    </select>
+                </div>
+            </nav>
+
+
+        </header>
+
+        <main id="home">
+            <section class="home">
+                <div class="left">
+                    Hi I am <span class="purple">Alok Kumar</span>
+                    <div> and I am a </div>
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="./Project/resume/resume.html" target="_blank"><button class="btn">Resume</button></a>
+                        <a href="https://github.com/Alok9004" target="_blank" title="github"><button
+                                class="btn">Github</button></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./images/bg.png" alt="">
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="main">
+                    <img src="./images/cropped_circle_image.png " alt="">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <h5>Developer <span>& Designer</span></h5>
+                        <p>I am a passionate developer with experience in Python, Django, modern web technologies, and
+                            exposure to DevOps & Cloud tools.</p>
+                        <a href="https://wa.me/message/XLM34IRUCDKYC1" title="whatsapp"><button type="button">Let's
+                                Talk</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project" id="projects">
+                <div class="title">
+                    <h2>My Projects</h2>
+                    <p>Here are some of the projects I've built, ranging from web development to Python applications and
+                        real-time detection systems. Each project highlights my skills in programming, design, and
+                        problem-solving.</p>
+                </div>
+                <div class="box">
+                    <div class="card">
+                        <img src="./logo/shadi.png" alt="">
+                        <h5>Shaadi.com Clone</h5>
+                        <div class="para">
+                            <p>Developed a matchmaking website clone with Home Page, Tips, and Recommendations using
+                                HTML & CSS. Focused on responsive design and clean UI.</p>
+                            <p style="text-align: center;">
+                                <a href="./Project/shadi.com/shadi.html" target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/prime.png" alt="">
+                        <h5>Prime Video Clone</h5>
+                        <div class="para">
+                            <p>Built a streaming platform clone with login/signup, movie browsing, and Subscription page
+                                simulation using HTML & CSS. Highlighted user-friendly interface.</p>
+                            <p style="text-align: center;">
+                                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/netflix.svg" alt="">
+                        <h5>Netflix Clone</h5>
+                        <div class="para">
+                            <p>Created a Netflix home page replica using HTML & CSS with focus on layout, banner, and
+                                movie sections for better UI experience.</p>
+                            <p style="text-align: center;">
+                                <a href="./Project/NetFlix/index.html" target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/fb.png" alt="">
+                        <h5>Facebook Login Page</h5>
+                        <div class="para">
+                            <p>Designed a Facebook login page clone using HTML & CSS. Practiced alignment, typography,
+                                and responsive form design.</p>
+                            <p style="text-align: center;">
+                                <a href="./Project/Facebook/login.html" target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/redbus.png" alt="">
+                        <h5>RedBus Clone</h5>
+                        <div class="para">
+                            <p>Built a RedBus home page clone using HTML & CSS with focus on bus search UI and ticket
+                                booking interface design.</p>
+                            <p style="text-align: center;">
+                                <a href="./Project/RedBus/index.html" class="button" target="_blank">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/cal.jpg" alt="">
+                        <h5>Scientific Calculator</h5>
+                        <div class="para">
+                            <p>Developed a GUI-based scientific calculator using Python & Tkinter supporting basic and
+                                advanced mathematical operations.</p>
+                            <p style="text-align: center;">
+                                <a href="https://github.com/Alok9004/Scientific_Calculator" target="_blank"
+                                    class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/credit.png" alt="">
+                        <h5>Credit Card Fraud Detection</h5>
+                        <div class="para">
+                            <p>Built a fraud detection model using Python, Pandas, NumPy, and Matplotlib. Analyzed and
+                                preprocessed transaction data to detect anomalies with machine learning.</p>
+                            <p style="text-align: center;">
+                                <a href="https://github.com/Alok9004/Credit-Card-Fraud_Detection" target="_blank"
+                                    class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/Carcrash.png" alt="">
+                        <h5>Real-Time Crash & Fire Detection Using CCTV</h5>
+                        <div class="para">
+                            <p>Developed a real-time crash and fire detection system using Python, Flask, MongoDB, YOLO,
+                                and PyTorch. Features automated alerts and live monitoring through CCTV.</p>
+                            <p style="text-align: center;">
+                                <a href="https://github.com/Alok9004/A-Real-Time-Crash-And-Fire-Detection-using-CCTV-"
+                                    target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./logo/porfolio.jpg" alt="">
+                        <h5>My Resume</h5>
+                        <div class="para">
+                            <p>Designed a <b>Resume</b> website to showcase projects, technical skills, and achievements using HTML & CSS with a responsive layout for desktop and mobile devices.</p>
+                            <p style="text-align: center;">
+                                <a href="./Portfolio/index.html" target="_blank" class="button">Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills" id="skills">
+                <div class="title">
+                    <h2>My Skills</h2>
+                </div>
+                <div class="skills-container">
+                    <div class="skill-box">
+                        <h3>Python</h3>
+                        <p>Proficient in core programming concepts, OOPs, and collections.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Tkinter</h3>
+                        <p>Experienced in building GUI-based desktop applications.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>YOLO</h3>
+                        <p>Basic knowledge of real-time object detection & image/video processing.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Django</h3>
+                        <p>Familiar with project setup, templates, and models.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>HTML & CSS</h3>
+                        <p>Skilled in semantic HTML and creative styling with CSS.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>JavaScript</h3>
+                        <p>Basic understanding with event handling and scripting.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Oracle SQL</h3>
+                        <p>Good with DDL, DML, joins, subqueries, and complex queries.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>DevOps & Cloud</h3>
+                        <p>AWS EC2, S3, RDS basics. Comfortable with Linux, shell scripting, Docker, basic of
+                            Kubernetes, Jenkins, Maven and deployments.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <form class="contact-form" method="post" enctype="text/plain" action="mailto:alokscfd9004@gmail.com">
+                    <fieldset>
+                        <legend dir="">Send Message</legend>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="number" placeholder="Your Number" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send</button>
+                    </fieldset>
+                </form>
+                <p>Let me get you a Beautiful Website.</p>
+                <a href="mailto:alokscfd9004@gmail.com" target="_blank" class="button" title="email">Hire Me</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Alok Kumar</p>
+            <p>For more HTML, CSS, Python & DevOps Projects - Follow my account:</p>
+            <div class="social">
+                <a href="https://github.com/Alok9004" target="_blank" title="github"><img src="./logo/github1.png"
+                        alt="github"></a>
+                <a href="https://www.linkedin.com/in/alok-kumar-a505a723a/" target="_blank" title="linkedin"><img
+                        src="./logo/linkedin.png" alt="linkedin"></a>
+                <a href="mailto:alokscfd9004@gmail.com" target="_blank" title="email"><img src="./logo/email.png"
+                        alt="email"></a>
+                <a href="https://wa.me/message/XLM34IRUCDKYC1 " target="_blank" title="whatsapp"><img
+                        src="./logo/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://www.facebook.com/profile.php?id=100080873103714" target="_blank" title="Facebook"><img
+                        src="./logo/fb.png" alt="Facebook"></a>
+            </div>
+            <p class="end">© 2025 Alok Kumar</p>
+        </footer>
+    </section>
+
+    <!-- Typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', "Graphic's Designer", 'Python Developer', 'DevOps Engineer'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true,
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script>
+    (function() {
+        emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target)
+        .then(() => alert('Message sent successfully!'))
+        .catch(() => alert('Failed to send message.'));
+    }
+    </script> -->
+
+</body>
+
+</html>
