@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon signup page</title>
+    <link rel="icon" href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/f64b2463cf1dba199491c885dff932f3.ico" />
+    <link rel="apple-touch-icon" href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/f64b2463cf1dba199491c885dff932f3.ico" />
+    <style>
+        #logo{
+            height:100px;
+            width:250px;
+            margin:auto;
+        }
+        #myFrom{
+            height:540px;
+            width:380px;
+            margin:auto;
+            margin-top: 7px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        }
+        #name{
+            height:27px;
+            width:340px;
+            margin-top: 11px;
+
+        }
+        #mobile{
+            height:27px;
+            width:340px;
+            margin-top: 11px;
+            
+        }
+        #pass{
+            height:27px;
+            width:340px;
+            margin-top: 11px;
+        }
+        #passag{
+            height:27px;
+            width:340px;
+            margin-top: 11px;
+        }
+        #button{
+            border:0;
+            height:35px;
+            width:350px;
+            margin-top: 18px;
+            background-color: #f2ca68;
+            color:black;
+            border-radius: 8px;
+            font-size: 17px;
+
+        }
+        p{
+            font-size: 13px;
+        }
+        #valid{
+            color:red;
+        }
+        #myFrom>input:hover{
+            border-color: #ebb11e;
+            border-radius: 9px;
+        }
+        .dlr{
+            color:#3498db;
+            font-size: 14px;
+        }
+        #v1{
+            color:red;
+        }
+        #v2{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img 
+        height="100px"
+        width="240px"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5VAVIE4pcqepSSxYIPaoI57uME4_82dh-dA&usqp=CAU"/>
+    </div>
+    <div id="myFrom">
+        <form action="./login.html" method="post" target="_blank">
+            <h1>Create account</h1>
+            <label><b>Your name</b></label><br>
+            <input type="text" id="name"/><br><br>
+            <div id="v2"></div>
+            <label><b>Mobile number or email</b></label><br>
+            <input type="text" id="mobile" required /><br><br>
+            <div id="v1"></div>
+            <label><b>Password</b></label><br>
+            <input type="password" id="pass" placeholder="At least 6 characters"/><br>
+            <p class="dlr">! Passwords must be at least 6 characters.</p>
+            <div id="valid"></div>
+            <label><b>Password again</b></label><br>
+            <input type="password" id="passag" required/><br><br>
+            <button id="button"><a href="./login.html" target="_blank">Create your Amazon account</a></button><br>
+            <p class="dlr">By creating an account or logging in,you agree to Amazon's Conditions of Use and Privacy Policy.</p>
+        </form>
+
+    </div>
+    
+</body>
+</html>
