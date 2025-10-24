@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Payment Page</title>
+<link rel="icon" href="https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/f64b2463cf1dba199491c885dff932f3.ico" />
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: roboto, sans-serif;
+    }
+    #nav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #e1 {
+        flex: 1 1 40%;
+        background-image: linear-gradient(to right, #222 5%, transparent 68%), 
+        url("https://m.media-amazon.com/images/G/01/Digital_Video/Pipeline/packshot_pipeline_banner3_IN._CB409104359_.png");
+        background-size: cover;
+        min-height: 200px;
+        padding-left: 5%;
+        padding-top: 2%;
+    }
+
+    .m1 { font-size: 2rem; color: white; }
+    .m3 { font-size: 1.2rem; color: white; }
+
+    #e2 {
+        border: 3px solid #1196ab;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 90%;
+        background: #fff;
+    }
+    .p4 { font-size: 1rem; }
+    #p5 { color: blue; font-size: 1rem; margin-left: 5px; }
+
+    .t5 { font-size: 1.5rem; margin: 20px 10%; }
+    #d6 {
+        border: 1px solid #c8cbcd;
+        margin: 0 10%;
+        padding: 15px;
+    }
+    .payment-option {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .payment-option img { margin-left: 10px; }
+
+    /* Hide details by default */
+    .payment-details {
+        display: none;
+        margin: 10px 0 20px 35px;
+    }
+
+    /* Show card details when cardOption is checked */
+    #cardOption:checked ~ #cardDetails {
+        display: block;
+    }
+    /* Show UPI details when upiOption is checked */
+    #upiOption:checked ~ #upiDetails {
+        display: block;
+    }
+
+    input[type="text"], input[type="date"] {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #8b8c8d;
+        border-radius: 4px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    button {
+        background-color: #0f79af;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    #sub5 {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+        font-size: 1.2rem;
+        background-color: #c8e3ed;
+        color: #333;
+    }
+    #footer {
+        background-color: #222;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        #nav { flex-direction: column; }
+        .m1 { font-size: 1.5rem; }
+        .t5 { margin-left: 5%; }
+        #d6 { margin: 0 5%; }
+    }
+</style>
+</head>
+    <body>
+        <div id="nav">
+            <div id="e1">
+                <img src="./Images/pv_logo_white._CB548637580_.png" alt="Prime Logo" style="width:140px;">
+                <div class="m3">Watch now, cancel anytime</div>
+                <div class="m1">Start your membership today</div>
+            </div>
+        </div>
+
+        <div id="e2">
+            <img src="./premium-quality.png" height="23px" width="23px">
+            <p class="p4">You will be automatically charged </p>
+            <p id="p5">₹179 </p>
+            <p class="p4"> Every month for your Prime membership. Cancel anytime.</p>
+        </div>
+
+        <p class="t5">Select a payment method</p>
+
+        <div id="d6">
+            <!-- Card Option -->
+            <div class="payment-option">
+                <input type="radio" name="payment" id="cardOption">
+                <label for="cardOption" style="margin-left:10px;">Add Debit/Credit/ATM card</label>
+            </div>
+            <div class="payment-details" id="cardDetails">
+                <input type="text" placeholder="Name on card"><br><br>
+                <input type="text" placeholder="Card Number"><br><br>
+                <input type="date"><br><br>
+                <button>Add your card</button>
+            </div>
+
+            <!-- UPI Option -->
+            <div class="payment-option">
+                <input type="radio" name="payment" id="upiOption">
+                <label for="upiOption" style="margin-left:10px;">Pay via UPI</label>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" height="20px">
+            </div>
+            <div class="payment-details" id="upiDetails">
+                <input type="text" placeholder="Enter your UPI ID (e.g. name@upi)"><br><br>
+                <button>Verify & Pay</button>
+            </div>
+        </div>
+
+        <button id="sub5"><a href="./movies.html">Continue</a></button>
+
+        <div id="footer">
+            © 1996-2025, Amazon.com, Inc. or its affiliates<br>
+            Terms and Privacy Notice | Help
+        </div>
+
+    </body>
+</html>

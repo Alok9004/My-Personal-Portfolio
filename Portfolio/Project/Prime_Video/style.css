@@ -1,0 +1,518 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.nav_bar {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_container {
+    width: 92%;
+    height: 80px;
+    background-color: #1a18187a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+#EN{
+    background-color: #404152bf;
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 2px;
+    cursor: pointer;
+}
+#fa-solid{
+    cursor: pointer;
+    width: 65px;
+}
+
+.prime_video {
+    font-size: 1.3em;
+    font-weight: 750;
+}
+
+.subcription {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.left ul {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.fa-solid {
+    color: white;
+    cursor: pointer;
+}
+
+#fa-solid {
+    color: white;
+    border: none;
+    background-color: #404152bf;
+    font-weight: 700;
+    font-size: 1em;
+    
+}
+
+#join {
+    color: white;
+    background-color: #4b4bc9;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 12px;
+}
+.left ul li a:hover {
+    color: #707577;
+    
+}
+ button{
+    cursor: pointer;
+ }
+
+/* ________this is main and hero_1 sec___________- */
+.hero_sec {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 15 / 7;
+
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+    object-position: right center;
+    display: block;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    max-width: 40%;
+    padding: 10px;
+}
+
+.content h1 {
+    padding: 10px 0px 10px 0px;
+    font-size: 2.5em;
+}
+
+.content p {
+    padding: 15px 0px 25px 0px;
+    font-size: 1.2em;
+}
+
+.content button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+/* Black gradient overlay (left half) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: black;
+    pointer-events: none;
+    opacity: 0.8;
+    filter: blur(20px);
+}
+
+/* ___________this is hero content 2----------- */
+.content_2 {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    height: 350px;
+}
+
+.content_2 p {
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.content_2 button {
+    padding: 15px;
+    font-size: 1em;
+    font-weight: 550;
+    border-radius: 10px;
+    border: none;
+    margin-top: 30px;
+}
+button:hover {
+    background-color: #dedede;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+
+/* ------------this is hero section-3 ------ */
+.hero_sec_3 {
+    background-color: #000000f2;
+    color: white;
+    height: 700px;
+}
+
+.right_side {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    width: 50%;
+    gap: 7px;
+    margin-right: 50px;
+    align-content: center;
+}
+
+.sections {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 84px;
+}
+
+.right_side div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right_side div {
+    max-width: 100%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.right_side div img:hover {
+    box-shadow: 0 0 40px 3.5px rgba(255, 255, 255, 0.233);
+    filter: blur(10px) brightness(20px);
+}
+
+.left_side {
+    width: 43%;
+    padding: 41px 0px 0px 30px;
+}
+
+.left_side p {
+    margin-top: 55px;
+    font-size: 1.2em;
+}
+
+/* -----------------this is footer section----------- */
+footer {
+    background-color: #222222;
+    color: white;
+    height: 136px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.prime_logo img {
+    height: 32px;
+}
+
+.terms_privacy a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(60, 197, 255, 0.996);
+}
+
+.terms_privacy {
+    padding: 10px;
+}
+
+footer p {
+    padding: 5px;
+    color: #fbf8f87d;
+}
+
+/* ------------this is @media qureis section to make responsive ------------ */
+@media(max-width:1080px) {
+    .left ul {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .content p {
+        font-size: 1em;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .content button {
+        font-size: 0.8em;
+        padding: 12px;
+    }
+}
+
+@media(max-width:950px) {
+    .content button {
+        padding: 8px;
+    }
+.left_side h1{
+   font-size: 1.5em;
+}
+.left_side p{
+    font-size: 1em;
+    margin-top: 30px;
+}
+.hero_sec_3{
+    height: 529px;
+}
+.left_side{
+    padding: 15px 0px 0px 30px;
+}
+    .content p {
+        font-size: 1em;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .content h1 {
+        font-size: 1.6em;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .content {
+        max-width: 49%;
+        top: 70px;
+        left: 20px;
+    }
+}
+
+@media(max-width:660px) {
+    #join {
+        display: none;
+    }
+
+    .nav_container {
+        width: 100%;
+        height: 44px;
+        background-color: black;
+        padding-right: 0px;
+        z-index: 5;
+    }
+
+    .nav_bar {
+        height: 44px;
+        z-index: 5;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .hero_sec {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 9 / 7;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: right center;
+        display: block;
+    }
+
+    .content {
+        max-width: 77%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 78%;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        z-index: 1;
+        color: white;
+    }
+
+    /* Dark Bottom 50% using ::after */
+    .hero_sec::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, transparent 46%, rgb(0 0 0 / 100%) 59%, rgb(0 0 0 / 100%) 41%);
+        border: none;
+        pointer-events: none;
+
+    }
+
+    .sections {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .hero_sec_3 {
+        height: 585px;
+    }
+
+    .right_side {
+        width: 80%;
+        gap: 7px;
+        margin-right: 0px;
+    }
+
+    .left_side {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .left_side h1 {
+        font-size: 1.7em;
+    }
+
+    .left_side p {
+        margin-top: 15px;
+        font-size: 1em;
+    }
+
+    .prime_logo img {
+        height: 30px;
+    }
+
+    .terms_privacy a {
+        font-size: 0.8em;
+    }
+
+    .footer p {
+        font-size: 0.8em;
+    }
+}
+
+@media(max-width:440px) {
+    .right :nth-child(3) {
+        display: none;
+    }
+
+    .left {
+        gap: 15px;
+    }
+
+    .right {
+        gap: 15px;
+    }
+
+    .content {
+        left: 35px;
+        padding-bottom: 22px;
+    }
+
+    .content h1 {
+        font-size: 1.1em;
+    }
+
+    .content p {
+        font-size: 0.7em;
+    }
+
+    .content button {
+        font-size: 0.7em;
+    }
+
+    .hero_sec_3 {
+        height: 410px;
+    }
+
+    .left_side h1 {
+        font-size: 1.1em;
+    }
+
+    .left_side p {
+        font-size: 0.7em;
+    }
+
+    .prime_video {
+        font-size: 1em;
+    }
+
+    .prime_logo img {
+        height: 22px;
+    }
+
+    .terms_privacy {
+        padding: 0px;
+    }
+
+    .terms_privacy a {
+        font-size: 0.6em;
+        padding: 5px;
+    }
+
+    .footer p {
+        font-size: 0.5em;
+    }
+}

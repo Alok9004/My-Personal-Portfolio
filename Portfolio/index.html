@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alok - Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop>
+    <source src="./video/video.mp4" type="video/mp4">Your browser does not support the video tag.
+  </video>
+
+  <div class="content">
+    <!-- Navbar -->
+    <header>
+      <nav>
+        <div class="left">Alok's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <select name="Menu" id="menu" onchange="location=this.value">
+            <option value="" disabled selected>Select Section</option>
+            <option value="#home">Home</option>
+            <option value="#about">About</option>
+            <option value="#projects">Projects</option>
+            <option value="#skills">Skills</option>
+            <option value="#contact">Contact</option>
+          </select>
+
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="home">
+        <div class="left">
+          Hi I am <span class="purple">Alok Kumar</span>
+          <div> and I am a </div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="./Project/resume.pdf" target="_blank"><button class="btn">Resume</button></a>
+            <a href="https://github.com/Alok9004" target="_blank"><button class="btn">Github</button></a>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/bg.png" alt="">
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="main">
+          <img src="./images/cropped_circle_image.png " alt="">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Developer <span>& Designer</span></h5>
+            <p>I am a passionate developer with experience in Python, Django, modern web technologies, and exposure to
+              DevOps & Cloud tools.</p>
+            <button type="button">Let's Talk</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <div class="title">
+          <h2>My Projects</h2>
+        </div>
+        <div class="box">
+          <div class="card">
+            <img src="./logo/shadi.png" alt="">
+            <h5>Shaadi.com Clone</h5>
+            <div class="para">
+              <p>Developed a clone with modern UI and backend integration.</p>
+              <p style="text-align: center;">
+                <a href="./Project/shadi.com/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/prime.png" alt="">
+            <h5>Prime Video Clone</h5>
+            <div class="para">
+              <p>Built a streaming platform clone with authentication and video display.</p>
+              <p style="text-align: center;">
+                <a href="./Project/Prime_Video/index.html" target="_blank" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./logo/redbus.png" alt="">
+            <h5>RedBus Clone</h5>
+            <div class="para">
+              <p>Created a ticket booking system with responsive UI and backend APIs.</p>
+              <p style="text-align: center;">
+                <a href="./Project/RedBus/assignment.html" class="button">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills" id="skills">
+        <div class="title">
+          <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+          <div class="skill-box">
+            <h3>Python</h3>
+            <p>Proficient in core programming concepts, OOPs, and collections.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Tkinter</h3>
+            <p>Experienced in building GUI-based desktop applications.</p>
+          </div>
+          <div class="skill-box">
+            <h3>YOLO</h3>
+            <p>Basic knowledge of real-time object detection & image/video processing.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Django</h3>
+            <p>Familiar with project setup, templates, and models.</p>
+          </div>
+          <div class="skill-box">
+            <h3>HTML & CSS</h3>
+            <p>Skilled in semantic HTML and creative styling with CSS.</p>
+          </div>
+          <div class="skill-box">
+            <h3>JavaScript</h3>
+            <p>Basic understanding with event handling and scripting.</p>
+          </div>
+          <div class="skill-box">
+            <h3>Oracle SQL</h3>
+            <p>Good with DDL, DML, joins, subqueries, and complex queries.</p>
+          </div>
+          <div class="skill-box">
+            <h3>DevOps & Cloud</h3>
+            <p>AWS EC2, S3, RDS basics. Comfortable with Linux, shell scripting, and deployments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p>Let me get you a Beautiful Website.</p>
+        <a href="mailto:alokscfd9004@gmail.com.com" target="_blank" class="button">Hire Me</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Alok Kumar</p>
+      <p>For more HTML, CSS, Python & DevOps Projects - Follow my account:</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/alok-kumar-a505a723a/" target="_blank"><img src="./logo/linkedin.png"
+            alt=""></a>
+        <a href="https://github.com/Alok9004" target="_blank"><img src="./logo/github1.png" alt=""></a>
+        <a href="https://www.facebook.com/people/Alok-Kumar/100080873103714/" target="_blank"><img src="./logo/fb.png"
+            alt=""></a>
+      </div>
+      <p class="end">© 2025 Alok Kumar</p>
+    </footer>
+  </div>
+
+  <!-- Typing Animation -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Graphic Designer', 'Python Developer', 'DevOps Engineer'],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
